@@ -126,4 +126,7 @@ I have Oolong tea
 >>> squared_num = [x**2 for x in range(10)]
 >>> squared_num
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> cube_num = [y**3 for y in range(5)]
+>>> cube_num
+[0, 1, 8, 27, 64]
 ```
