@@ -21,4 +21,5 @@ else:
     pet_food = "Unknown species"
 
 # Output the result
-print(f"Recommended pet food for a {species.lower()} aged {age} years is: {pet_food}")
+# print(f"Recommended pet food for a {species.lower()} aged {age} years is: {pet_food}")
+print("Recommended pet food for a ",species.lower(), "aged" ,age, "years is:" ,pet_food)
