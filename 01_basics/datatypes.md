@@ -477,3 +477,46 @@ list.copy(     list.index(    list.pop(      list.sort(
 
 
 ```
+
+# Tuples  is immutable (list is mutable)
+- tuple is like list
+- tuple is immutable and list is mutable
+- it respresented as ("a","b")
+
+```
+>>> tea_types= ("black","green","Oolong")
+>>> tea_types
+('black', 'green', 'Oolong')
+>>> tea_types[0]
+'black'
+>>> tea_types[-1]
+'Oolong'
+>>> tea_types[1:]
+('green', 'Oolong')
+>>> len(tea_types)
+3
+>>> more_tea = ("Herbal","earl grey")
+>>> all_tea= more_tea + tea_types
+>>> all_tea
+('Herbal', 'earl grey', 'black', 'green', 'Oolong')
+>>> if "green" in all_tea:
+...     print("I have green tea")
+... 
+I have green tea
+>>> more_tea = ("Herbal","Earl grey", "Herbal")
+>>> more_tea
+('Herbal', 'Earl grey', 'Herbal')
+>>> more_tea.count("Herbal")
+2
+>>> more_tea
+('Herbal', 'Earl grey', 'Herbal')
+>>> tea_types
+('black', 'green', 'Oolong')
+>>> (black, green, Oolong) = tea_types
+>>> black
+'black'
+>>> green
+'green'
+>>> type(tea_types)
+<class 'tuple'>
+```
