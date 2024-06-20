@@ -26,9 +26,32 @@ x = 99
 # func3()
 # print(x)
 
-def f1():
-    x=88
-    def f2():
-        print(x)
-    f2()
-f1()
+
+
+#### closures
+
+# def f1():
+#     x=88
+#     def f2():
+#         print(x)
+#     f2()
+# myresult = f1()
+# print(myresult())
+
+
+def chaicode(num):
+    def actual(x):
+        return x** num
+    return actual
+
+# def chaicode(2):
+#     def actual(x):
+#         return x**2
+#     return actual
+
+
+f = chaicode(2)
+g= chaicode(3)
+
+print(f(3))
+print(g(3))
