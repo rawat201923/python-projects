@@ -10,3 +10,4 @@ print(sum_All(1,2,6,3,7,2,4,6))
 
 
 # continue from 34:00 and 7th question
+# continue from 34:00 and 7th question
